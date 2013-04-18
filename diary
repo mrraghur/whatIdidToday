@@ -1,8 +1,18 @@
 
-
 Tried to understand LLVM compiler.
 
 Typed and executed the code in LLVM tutorial (Until chapter -3 LLVM codegen)
 
+Wrote a script for finding similar documents. Given 'n' documents....Make histogram of word distribution 
+in each document. Write output to a CSV file and then plot the same to excel chart. 
+
+For the one news event, three documents on arun jaitley that I tested, two of the histograms were very similar.
+
+----------
+
+code coverage based debugger.
+As a first step to writing a debugger that color-codes which lines have been executed...I wrote a perl script which 
+keeps tracks of which branch a given if condition takes. The original input script is written out
+as a HTML file with "taken branches" being showing up as red.
 
 
