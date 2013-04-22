@@ -1,4 +1,6 @@
 
+4/5/2013
+
 Tried to understand LLVM compiler.
 
 Typed and executed the code in LLVM tutorial (Until chapter -3 LLVM codegen)
@@ -10,9 +12,19 @@ For the one news event, three documents on arun jaitley that I tested, two of th
 
 ----------
 
+4/15/2013
+
 code coverage based debugger.
 As a first step to writing a debugger that color-codes which lines have been executed...I wrote a perl script which 
 keeps tracks of which branch a given if condition takes. The original input script is written out
 as a HTML file with "taken branches" being showing up as red.
+
+4/21/2013
+Improved upon the code codeverage based debugger tool above. Earlier I was looking for code "blocks" (code with 
+brackets) using Regex. Now that is replaced by perl PPI module. I can now track which If statements and which next
+statements have been executed. I am happy with the progress.
+
+Now I need to use a proper code coverage tool for taking this to next level. Unfortunately, I don't know 
+which language to pick up.
 
 
