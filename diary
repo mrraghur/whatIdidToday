@@ -1,4 +1,3 @@
-
 4/5/2013
 
 Tried to understand LLVM compiler.
@@ -26,5 +25,80 @@ statements have been executed. I am happy with the progress.
 
 Now I need to use a proper code coverage tool for taking this to next level. Unfortunately, I don't know 
 which language to pick up.
+
+
+----------
+
+5/1/2009
+Tried to play with ffmpeg. Adding scrolling and such stuff....Here are some commands for doing that...
+
+Just add text...
+
+Bottom to top scrolling
+"C:\Program Files (x86)\WinFF\ffmpeg.exe" -y -i "C:\Users\Raghu Romeo\Desktop\IMG_0696.MOV" -acodec libmp3lame -vcodec msmpeg4 -b:a 192k -b:v 1000k  -ar 44100  -vf "drawtext=fontfile=/Windows/Fonts/cambriai.ttf: x=(w-tw)/2: y=h-(2*lh)-n: fontcolor=white: fontsize=40: box=1: boxcolor=0x00000000@1: text=raghu" -an    "C:\Users\Raghu Romeo\Documents\IMG_0696.avi"
+
+No scrolling...text in top left corner
+"C:\Program Files (x86)\WinFF\ffmpeg.exe" -y -i "C:\Users\Raghu Romeo\Desktop\IMG_0696.MOV" -acodec libmp3lame -vcodec msmpeg4 -b:a 192k -b:v 1000k  -ar 44100  -vf "drawtext=fontfile=/Windows/Fonts/cambriai.ttf: fontcolor=white: fontsize=40: box=1: boxcolor=0x00000000@1: text=raghu is god" -an    "C:\Users\Raghu Romeo\Documents\IMG_0696.avi"
+
+ffmpeg -i in.mov -vf "drawtext=fontfile=/usr/share/fonts/ttf-bitstream-vera/Vera.ttf: x=(w-tw)/2: y=h-(2*lh)-n: fontcolor=white: fontsize=40: box=1: boxcolor=0x00000000@1: text=" -an -y out.mov
+
+Frame number on eachframe (Not working)
+"C:\Program Files (x86)\WinFF\ffmpeg.exe" -y -i "C:\Users\Raghu Romeo\Desktop\IMG_0696.MOV" -acodec libmp3lame -vcodec msmpeg4 -b:a 192k -b:v 1000k  -ar 44100  -vf "drawtext=text=%{n}:expansion=normal:fontfile=/Windows/Fonts/cambriai.ttf: y=h-(2*lh)-n: x=h-(2*lh)-n: fontcolor=white: fontsize=40: box=1: boxcolor=0x00000000@1" -an    "C:\Users\Raghu Romeo\Documents\IMG_0696.avi"
+
+This seems to work reasonably well (banner scroll bar). Need to improve though.
+"C:\Program Files (x86)\WinFF\ffmpeg.exe" -y -i "C:\Users\Raghu Romeo\Desktop\IMG_0696.MOV" -acodec libmp3lame -vcodec msmpeg4 -b:a 192k -b:v 1000k  -ar 44100  -vf "drawtext=text=raghu wassup daaa news ycombinator huhahua  hula hoop america san francisco :expansion=normal:fontfile=/Windows/Fonts/cambriai.ttf: y=0: x=h-(2*lh)-n: fontcolor=white: fontsize=40: box=1: boxcolor=0x00000000@1" -an    "C:\Users\Raghu Romeo\Documents\IMG_0696.avi"
+
+
+This also works well
+"C:\Program Files (x86)\WinFF\ffmpeg.exe" -y -i "C:\Users\Raghu Romeo\Desktop\IMG_0696.MOV" -vf "drawtext=fontfile=/Windows/Fonts/cambriai.ttf:text=You should not be watching this:fontsize=40:fontcolor=white:shadowcolor=black:shadowx=1:shadowy=1:x=W*(1-0.2*t):y=H+descent-ascent"   -an -y "C:\Users\Raghu Romeo\Documents\IMG_0696.avi"
+
+
+This link is fun
+
+Add watermakrs
+"C:\Program Files (x86)\WinFF\ffmpeg.exe" -y -i "C:\Users\Raghu Romeo\Desktop\IMG_0696.MOV" -vf "movie=/Users/Raghu Romeo/Desktop/myhome.jpg [watermark]; [in][watermark] overlay=main_w-overlay_w-10:10 [out]"  -an -y "C:\Users\Raghu Romeo\Documents\IMG_0696.avi"
+
+http://www.idude.net/index.php/how-to-watermark-a-video-using-ffmpeg/
+
+
+http://www.davidsimmons.com/soft/dvtext/
+http://dbaspot.com/linux-misc/154617-how-create-scrolling-text-print.html
+
+
+
+Filtering guide
+http://ffmpeg.org/trac/ffmpeg/wiki/FilteringGuide
+
+
+-f dshow -i video="Integrated Webcam" 
+
+
+C:\Users\Raghu Romeo\Desktop>"c:\Program Files (x86)\WinFF\ffmpeg.exe" -f dshow -i video="Integrated Webcam"  -vf "drawtext=fontfile=/Windows/Fonts/cambriai.ttf:x=10:y=10: fontcolor=white: fontsize=40: box=1: boxcolor=0x00000000@1: text=raghu_is_genius" output.flv
+
+car insurance authorization 025023
+
+
+
+--------
+
+5/9/2013
+Read a lot about GCC and figured that I can write a GCC plugin to do code coverage ...Will implement
+it soon.
+
+-------
+Tried to contact Hotels for weather related project...
+
+Wrote to imimobile and airsage for cell operators api/data.
+
+
+
+
+
+
+
+
+
+
+
 
 
