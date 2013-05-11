@@ -99,7 +99,7 @@ Found gcc plugin through python. Tried some examples as below.
 
 gcc  -fplugin=./python.so -fplugin-arg-python-script=../show-gimple.py -g ../test.c 
 
-
+Now I need to make a code covergae thingy for it
 
 
 
