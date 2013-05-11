@@ -90,6 +90,15 @@ Tried to contact Hotels for weather related project...
 
 Wrote to imimobile and airsage for cell operators api/data.
 
+-----------
+
+5/10/2013
+
+Finally found something to use as an API for gcc parser.
+Found gcc plugin through python. Tried some examples as below.
+
+gcc  -fplugin=./python.so -fplugin-arg-python-script=../show-gimple.py -g ../test.c 
+
 
 
 
