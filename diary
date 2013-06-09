@@ -78,6 +78,28 @@ C:\Users\Raghu Romeo\Desktop>"c:\Program Files (x86)\WinFF\ffmpeg.exe" -f dshow 
 car insurance authorization 025023
 
 
+How to add subtitles
+
+FC_CONFIG_DIR=C:\Program Files\ffmpeg
+FONTCONFIG_FILE=fonts.conf
+FONTCONFIG_PATH=C:\Program Files\ffmpeg
+
+
+
+C:\Users\Raghu Romeo\Desktop>x"C:\Program Files (x86)\WinFF\ffmpeg.exe" -i "IMG_0696.MOV" -acodec libmp3lame -vcodec msmpeg4 -b:a 192k -b:v 1000k -ar 44100 -vf subtitles=sub.ass out.avi
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 --------
 
