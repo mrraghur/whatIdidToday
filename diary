@@ -84,22 +84,12 @@ FC_CONFIG_DIR=C:\Program Files\ffmpeg
 FONTCONFIG_FILE=fonts.conf
 FONTCONFIG_PATH=C:\Program Files\ffmpeg
 
+"C:\Program Files (x86)\WinFF\ffmpeg.exe" -i "IMG_0696.MOV" -acodec libmp3lame -vcodec msmpeg4 -b:a 192k -b:v 1000k -ar 44100 -vf subtitles=sub.ass out.avi
 
+Live streaming...
+http://ffmpeg.org/trac/ffmpeg/wiki/DirectShow
 
-C:\Users\Raghu Romeo\Desktop>x"C:\Program Files (x86)\WinFF\ffmpeg.exe" -i "IMG_0696.MOV" -acodec libmp3lame -vcodec msmpeg4 -b:a 192k -b:v 1000k -ar 44100 -vf subtitles=sub.ass out.avi
-
-
-
-
-
-
-
-
-
-
-
-
-
+"C:\Program Files (x86)\WinFF\ffmpeg.exe" -f dshow -s 1280x1024 -r 10 -vcodec mjpeg -i video="Integrated Webcam"  -vf "drawtext=fontfile=/Windows/Fonts/cambriai.ttf:x=10:y=10: fontcolor=white: fontsize=40: box=1: boxcolor=0x00000000@1: text=raghu_is_genius" out.avi
 
 --------
 
