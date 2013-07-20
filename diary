@@ -114,7 +114,8 @@ gcc  -fplugin=./python.so -fplugin-arg-python-script=../show-gimple.py -g ../tes
 Now I need to make a code covergae thingy for it
 
 
-
+Looks like good for overlaying
+http://www.masternewmedia.org/video_internet_television/webcam-enhancer-utilities/webcam-video-mixer-overlay-camtwist-review-20070618.htm
 
 
 
