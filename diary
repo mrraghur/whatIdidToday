@@ -118,6 +118,39 @@ Looks like good for overlaying
 http://www.masternewmedia.org/video_internet_television/webcam-enhancer-utilities/webcam-video-mixer-overlay-camtwist-review-20070618.htm
 
 
+9/10/2013 (September)
+--------------------
+Downloaded woboq code browser, modified it to fit my needs and got some designs to compile with it. Now, with 
+code-coverage on, on a webpage, I get to see which lines are executed and which are not. Finally, I am moving forward.
+
+
+1/11/2013
+---------
+Worked with vlc to display RSS feeds on a video. Using chromecast, I can now display image on TV, in real time.
+Also, I can make audio-bar graph show up on my videos. Unfortunately, 
+this only works on linux. Windows, bar-graph, I have not figured yet.
+
+1/12/2013
+----------
+Integrated whatsapp API into linux. Now, I can send message from command line to mobile. #messaging
+have a bit of scripting to do. 
+
+Python: Spent lot of time installing date utils into my local login. It took too much time to use easy_setup, easy_install, setup.py etc
+Finally ended up copying from my virtual machine to local login. Everything works fine now.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
