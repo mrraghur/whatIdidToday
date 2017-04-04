@@ -35,28 +35,28 @@ Tried to play with ffmpeg. Adding scrolling and such stuff....Here are some comm
 Just add text...
 
 Bottom to top scrolling
-"C:\Program Files (x86)\WinFF\ffmpeg.exe" -y -i "C:\Users\Raghu Romeo\Desktop\IMG_0696.MOV" -acodec libmp3lame -vcodec msmpeg4 -b:a 192k -b:v 1000k  -ar 44100  -vf "drawtext=fontfile=/Windows/Fonts/cambriai.ttf: x=(w-tw)/2: y=h-(2*lh)-n: fontcolor=white: fontsize=40: box=1: boxcolor=0x00000000@1: text=raghu" -an    "C:\Users\Raghu Romeo\Documents\IMG_0696.avi"
+"C:\Program Files (x86)\WinFF\ffmpeg.exe" -y -i "C:\Users\ Romeo\Desktop\IMG_0696.MOV" -acodec libmp3lame -vcodec msmpeg4 -b:a 192k -b:v 1000k  -ar 44100  -vf "drawtext=fontfile=/Windows/Fonts/cambriai.ttf: x=(w-tw)/2: y=h-(2*lh)-n: fontcolor=white: fontsize=40: box=1: boxcolor=0x00000000@1: text=r" -an    "C:\Users\r Romeo\Documents\IMG_0696.avi"
 
 No scrolling...text in top left corner
-"C:\Program Files (x86)\WinFF\ffmpeg.exe" -y -i "C:\Users\Raghu Romeo\Desktop\IMG_0696.MOV" -acodec libmp3lame -vcodec msmpeg4 -b:a 192k -b:v 1000k  -ar 44100  -vf "drawtext=fontfile=/Windows/Fonts/cambriai.ttf: fontcolor=white: fontsize=40: box=1: boxcolor=0x00000000@1: text=raghu is god" -an    "C:\Users\Raghu Romeo\Documents\IMG_0696.avi"
+"C:\Program Files (x86)\WinFF\ffmpeg.exe" -y -i "C:\Users\ Romeo\Desktop\IMG_0696.MOV" -acodec libmp3lame -vcodec msmpeg4 -b:a 192k -b:v 1000k  -ar 44100  -vf "drawtext=fontfile=/Windows/Fonts/cambriai.ttf: fontcolor=white: fontsize=40: box=1: boxcolor=0x00000000@1: text=r is god" -an    "C:\Users\r Romeo\Documents\IMG_0696.avi"
 
 ffmpeg -i in.mov -vf "drawtext=fontfile=/usr/share/fonts/ttf-bitstream-vera/Vera.ttf: x=(w-tw)/2: y=h-(2*lh)-n: fontcolor=white: fontsize=40: box=1: boxcolor=0x00000000@1: text=" -an -y out.mov
 
 Frame number on eachframe (Not working)
-"C:\Program Files (x86)\WinFF\ffmpeg.exe" -y -i "C:\Users\Raghu Romeo\Desktop\IMG_0696.MOV" -acodec libmp3lame -vcodec msmpeg4 -b:a 192k -b:v 1000k  -ar 44100  -vf "drawtext=text=%{n}:expansion=normal:fontfile=/Windows/Fonts/cambriai.ttf: y=h-(2*lh)-n: x=h-(2*lh)-n: fontcolor=white: fontsize=40: box=1: boxcolor=0x00000000@1" -an    "C:\Users\Raghu Romeo\Documents\IMG_0696.avi"
+"C:\Program Files (x86)\WinFF\ffmpeg.exe" -y -i "C:\Users\ Romeo\Desktop\IMG_0696.MOV" -acodec libmp3lame -vcodec msmpeg4 -b:a 192k -b:v 1000k  -ar 44100  -vf "drawtext=text=%{n}:expansion=normal:fontfile=/Windows/Fonts/cambriai.ttf: y=h-(2*lh)-n: x=h-(2*lh)-n: fontcolor=white: fontsize=40: box=1: boxcolor=0x00000000@1" -an    "C:\Users\r Romeo\Documents\IMG_0696.avi"
 
 This seems to work reasonably well (banner scroll bar). Need to improve though.
-"C:\Program Files (x86)\WinFF\ffmpeg.exe" -y -i "C:\Users\Raghu Romeo\Desktop\IMG_0696.MOV" -acodec libmp3lame -vcodec msmpeg4 -b:a 192k -b:v 1000k  -ar 44100  -vf "drawtext=text=raghu wassup daaa news ycombinator huhahua  hula hoop america san francisco :expansion=normal:fontfile=/Windows/Fonts/cambriai.ttf: y=0: x=h-(2*lh)-n: fontcolor=white: fontsize=40: box=1: boxcolor=0x00000000@1" -an    "C:\Users\Raghu Romeo\Documents\IMG_0696.avi"
+"C:\Program Files (x86)\WinFF\ffmpeg.exe" -y -i "C:\Users\ Romeo\Desktop\IMG_0696.MOV" -acodec libmp3lame -vcodec msmpeg4 -b:a 192k -b:v 1000k  -ar 44100  -vf "drawtext=text=r wassup daaa news ycombinator huhahua  hula hoop america san francisco :expansion=normal:fontfile=/Windows/Fonts/cambriai.ttf: y=0: x=h-(2*lh)-n: fontcolor=white: fontsize=40: box=1: boxcolor=0x00000000@1" -an    "C:\Users\r Romeo\Documents\IMG_0696.avi"
 
 
 This also works well
-"C:\Program Files (x86)\WinFF\ffmpeg.exe" -y -i "C:\Users\Raghu Romeo\Desktop\IMG_0696.MOV" -vf "drawtext=fontfile=/Windows/Fonts/cambriai.ttf:text=You should not be watching this:fontsize=40:fontcolor=white:shadowcolor=black:shadowx=1:shadowy=1:x=W*(1-0.2*t):y=H+descent-ascent"   -an -y "C:\Users\Raghu Romeo\Documents\IMG_0696.avi"
+"C:\Program Files (x86)\WinFF\ffmpeg.exe" -y -i "C:\Users\ Romeo\Desktop\IMG_0696.MOV" -vf "drawtext=fontfile=/Windows/Fonts/cambriai.ttf:text=You should not be watching this:fontsize=40:fontcolor=white:shadowcolor=black:shadowx=1:shadowy=1:x=W*(1-0.2*t):y=H+descent-ascent"   -an -y "C:\Users\r Romeo\Documents\IMG_0696.avi"
 
 
 This link is fun
 
 Add watermakrs
-"C:\Program Files (x86)\WinFF\ffmpeg.exe" -y -i "C:\Users\Raghu Romeo\Desktop\IMG_0696.MOV" -vf "movie=/Users/Raghu Romeo/Desktop/myhome.jpg [watermark]; [in][watermark] overlay=main_w-overlay_w-10:10 [out]"  -an -y "C:\Users\Raghu Romeo\Documents\IMG_0696.avi"
+"C:\Program Files (x86)\WinFF\ffmpeg.exe" -y -i "C:\Users\Romeo\Desktop\IMG_0696.MOV" -vf "movie=/Users/Romeo/Desktop/myhome.jpg [watermark]; [in][watermark] overlay=main_w-overlay_w-10:10 [out]"  -an -y "C:\Users\r Romeo\Documents\IMG_0696.avi"
 
 http://www.idude.net/index.php/how-to-watermark-a-video-using-ffmpeg/
 
@@ -73,7 +73,7 @@ http://ffmpeg.org/trac/ffmpeg/wiki/FilteringGuide
 -f dshow -i video="Integrated Webcam" 
 
 
-C:\Users\Raghu Romeo\Desktop>"c:\Program Files (x86)\WinFF\ffmpeg.exe" -f dshow -i video="Integrated Webcam"  -vf "drawtext=fontfile=/Windows/Fonts/cambriai.ttf:x=10:y=10: fontcolor=white: fontsize=40: box=1: boxcolor=0x00000000@1: text=raghu_is_genius" output.flv
+C:\Users\r Romeo\Desktop>"c:\Program Files (x86)\WinFF\ffmpeg.exe" -f dshow -i video="Integrated Webcam"  -vf "drawtext=fontfile=/Windows/Fonts/cambriai.ttf:x=10:y=10: fontcolor=white: fontsize=40: box=1: boxcolor=0x00000000@1: text=r_is_genius" output.flv
 
 car insurance authorization 025023
 
@@ -89,7 +89,7 @@ FONTCONFIG_PATH=C:\Program Files\ffmpeg
 Live streaming...
 http://ffmpeg.org/trac/ffmpeg/wiki/DirectShow
 
-"C:\Program Files (x86)\WinFF\ffmpeg.exe" -f dshow -s 1280x1024 -r 10 -vcodec mjpeg -i video="Integrated Webcam"  -vf "drawtext=fontfile=/Windows/Fonts/cambriai.ttf:x=10:y=10: fontcolor=white: fontsize=40: box=1: boxcolor=0x00000000@1: text=raghu_is_genius" out.avi
+"C:\Program Files (x86)\WinFF\ffmpeg.exe" -f dshow -s 1280x1024 -r 10 -vcodec mjpeg -i video="Integrated Webcam"  -vf "drawtext=fontfile=/Windows/Fonts/cambriai.ttf:x=10:y=10: fontcolor=white: fontsize=40: box=1: boxcolor=0x00000000@1: text=r_is_genius" out.avi
 
 --------
 
@@ -137,6 +137,7 @@ have a bit of scripting to do.
 
 Python: Spent lot of time installing date utils into my local login. It took too much time to use easy_setup, easy_install, setup.py etc
 Finally ended up copying from my virtual machine to local login. Everything works fine now.
+
 
 
 
