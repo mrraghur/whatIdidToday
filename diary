@@ -140,13 +140,63 @@ Finally ended up copying from my virtual machine to local login. Everything work
 
 
 
+====
+
+Learn Scaling
+A set of tutorial to learn scaling big systems. How do you identify when you are paging in and out? How do you know when you are using more memory than is available on the machine (Tutorial for context switching)
+
+How do you identify context switching? (Tutorial for context switching)
+
+How do you identify VIP/load balancer not working well? What if a box is throwing too many 503s? Why does it get more calls than other boxes?
+
+How do you determine ifa box is going bad and giving errors?
+
+How do you cancel a request in the middle of processing?
+
+How is the GC cycle? What is the time between GC cycles?
+
+How does GC perform once we increase memory on the box
+
+How do you know how many threads are running in your box/server?
+
+** How many threads can a server handle **
+
+Typically, 48 cores can handle about 1500. More than 2500, we will have context switching
+
+
+===
+
+businessIdeaHeuristics
+
+businessIdeaHeuristics
+
+Combining data two or more popular services. This helps in discovering new insights
+
+For example, crunchbase is a huge database of companies and their current team members. Linkedin is a repository of current
+
+   For example, youtube is a big database of videos, including educational ones. Wikipedia is a huge database of relationships between closely related entities. So, given a video on youtube (Eg: How do Tvs work. ), one can potentially go to history of TVs and then discovery of electroc mangentic waves. A few people would love a video "recommendation engine" based on this principle.
+
+Crunchbase has funding  and success information on companies. Linkedin has work histories. One can identify people who are more likely to lead startup/team success and recommend them to startups looking to hire.
+
+Tracking accuracy of predictions. If there is a service which makes any kind of prediction, an associated service would be to track accuracy of such a prediction. For example, weather.com, accuweather, many websites make weather predictions. Forecastwatch.com tracks accuracy of each of these services and makes monthly/weekly report. They charge based on data and any consulting requirements!
+
+Applying new technology to problems too which we could not apply them before Applying computer vision al
+
+Take an extremely costly item/service and see how you can bring its cost down? You can do this by increasing production volumes, or by removing some features or by changing its hardware/software etc. For example, mobile phones in early 2000s would have costed $3-400 with a small LCD screen for display. But now, smartphones cost less than that much. Along the way, number of people using smartphones has exploded.
+
+Intercontinental travel would have take 6 months and cost you a fortune. Now people go from USA to India every holiday season in just under 24 hours.
 
 
 
 
+===
+startup manager questions. 
 
+    Suppose you are big company and you get a mail from City telling you that the water is contaminated. What would you do? Would you give employees an off?
 
+    Would you order water? Where will you get so much water from? How much will it cost? Who in the organization will pay for it?
 
+    How will you manage food ?
 
 
 
